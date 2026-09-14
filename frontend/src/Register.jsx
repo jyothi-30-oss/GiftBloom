@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Register.css";
 
 function Register() {
@@ -83,7 +84,7 @@ function Register() {
 
         <p className="register-footer">
           Already have an account?{" "}
-          <a href="/login">Login</a>
+          <Link to="/login">Login</Link>
         </p>
 
       </div>
