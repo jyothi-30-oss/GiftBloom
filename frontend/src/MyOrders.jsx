@@ -13,7 +13,7 @@ function MyOrders() {
 
     const user = JSON.parse(savedUser);
 
-    fetch(`http://localhost:5000/api/orders/customer/${user.id}`)
+    fetch(`https://gift-bloom-icip.vercel.app/api/orders/customer/${user.id}`)
       .then((response) => response.json())
       .then((data) => setOrders(data))
       .catch((error) =>

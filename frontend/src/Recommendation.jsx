@@ -9,27 +9,22 @@ function Recommendation() {
 
   const getRecommendation = () => {
 
-    // Toys → Teddy Bear
     if (interest === "Toys") {
       setRecommendation("🧸 Teddy Bear");
     }
 
-    // Coffee → Mugs
     else if (interest === "Coffee") {
       setRecommendation("☕ Personalized Mug");
     }
 
-    // Chocolate → Chocolates
     else if (interest === "Chocolate") {
       setRecommendation("🍫 Chocolate Gift Box");
     }
 
-    // Gifts → Photo Frames + Keychains
     else if (interest === "Gifts") {
       setRecommendation("🖼️ Photo Frame + 🔑 Keychain");
     }
 
-    // If nothing is selected
     else {
       setRecommendation("🎁 Please select an interest");
     }

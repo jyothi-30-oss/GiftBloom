@@ -5,7 +5,7 @@ function Admin() {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/orders")
+    fetch("https://gift-bloom-icip.vercel.app/api/orders")
       .then((response) => response.json())
       .then((data) => setOrders(data))
       .catch((error) => console.log("Admin Error:", error));
@@ -14,7 +14,7 @@ function Admin() {
   const updateStatus = async (orderId, newStatus) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/orders/${orderId}/status`,
+        `https://gift-bloom-icip.vercel.app/api/orders/${orderId}/status`,
         {
           method: "PUT",
           headers: {

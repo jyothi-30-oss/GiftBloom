@@ -38,7 +38,7 @@ function Cart() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/orders",
+        "https://gift-bloom-icip.vercel.app/api/orders",
         {
           method: "POST",
           headers: {

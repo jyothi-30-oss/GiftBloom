@@ -11,7 +11,7 @@ function ProductList() {
   const { addToWishlist } = useWishlist();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch("https://gift-bloom-icip.vercel.app/api/products")
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.log(error));
