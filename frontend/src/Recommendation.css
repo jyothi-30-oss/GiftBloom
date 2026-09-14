@@ -1,0 +1,121 @@
+.recommendation-page {
+  min-height: 90vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffe1e8, #fff5f7);
+}
+
+.recommendation-card {
+  width: 500px;
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.recommendation-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.recommendation-card h1 {
+  color: #ff4757;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.recommendation-subtitle {
+  color: #777;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.recommendation-form {
+  text-align: left;
+}
+
+.recommendation-form label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 7px;
+  font-weight: bold;
+  color: #444;
+}
+
+.recommendation-form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  background: white;
+  cursor: pointer;
+}
+
+.recommendation-form select:focus {
+  outline: none;
+  border-color: #ff6b81;
+}
+
+.recommendation-button {
+  width: 100%;
+  margin-top: 28px;
+  padding: 14px;
+  background: #ff6b81;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.recommendation-button:hover {
+  background: #ff4757;
+}
+
+.recommendation-result {
+  margin-top: 30px;
+  padding: 20px;
+  background: #fff0f3;
+  border-radius: 12px;
+  border: 1px solid #ffd1d9;
+}
+
+.recommendation-result h2 {
+  color: #ff4757;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.recommendation-result p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .recommendation-page {
+    padding: 25px 15px;
+  }
+
+  .recommendation-card {
+    width: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+
+  .recommendation-card h1 {
+    font-size: 28px;
+  }
+
+  .recommendation-icon {
+    font-size: 45px;
+  }
+}
